@@ -12,7 +12,7 @@ class SimpleReport(ABC):
 
         return f"""Data de fabricação mais antiga: {menor_data}
 Data de validade mais próxima: {data_mais_proxima}
-Empresa com mais produtos: {empresa_mais_produtos}"""
+Empresa com mais produtos: {empresa_mais_produtos}""".strip()
 
     @staticmethod
     def menor_date(lista):

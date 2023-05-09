@@ -16,8 +16,7 @@ class CompleteReport(SimpleReport):
 Data de validade mais próxima: {data_validade}
 Empresa com mais produtos: {empresa_produtos}
 Produtos estocados por empresa:
-{list_names}
-"""
+{list_names}"""
 
     @abstractmethod
     def count_products(list):
