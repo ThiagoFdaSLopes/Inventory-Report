@@ -1,9 +1,9 @@
-from abc import ABC, abstractmethod
+from abc import ABC
 from datetime import date, datetime
 
 
 class SimpleReport(ABC):
-    @abstractmethod
+    @staticmethod
     def generate(list):
 
         menor_data = SimpleReport.menor_date(list)
@@ -14,7 +14,7 @@ class SimpleReport(ABC):
 Data de validade mais próxima: {data_mais_proxima}
 Empresa com mais produtos: {empresa_mais_produtos}"""
 
-    @abstractmethod
+    @staticmethod
     def menor_date(lista):
         datas_de_fabricacao = [
             datetime.strptime(
@@ -24,7 +24,7 @@ Empresa com mais produtos: {empresa_mais_produtos}"""
         menor_data = min(datas_de_fabricacao)
         return menor_data
 
-    @abstractmethod
+    @staticmethod
     def min_date(list):
         data_atual = date.today()
         diferenca_dias_minima = float('inf')
@@ -38,7 +38,7 @@ Empresa com mais produtos: {empresa_mais_produtos}"""
                 data_mais_proxima = data_validade
         return data_mais_proxima
 
-    @abstractmethod
+    @staticmethod
     def count_empresa(list):
         contagem_empresas = {}
 
