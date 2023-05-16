@@ -12,7 +12,7 @@ Esses dados de estoque poderão ser obtidos de diversas fontes:
 
 Além disso, o relatório final possuirá duas versões: simples e completa.
 
-::mountain_bicyclist Habilidades a serem trabalhadas:
+::mountain_bicyclist:: Habilidades a serem trabalhadas:
 
 Aplicar conceitos de Orientação a Objetos em Python;
 Aplicar padrões de projeto;
